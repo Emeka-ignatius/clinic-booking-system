@@ -23,10 +23,10 @@ export function QuickInfoSectionComponent() {
     <MaxWidthWrapper>
       <div className="container grid mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
           {services.map((service, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="pt-6">
+            <Card key={index} className="text-center w-full h-[20svh]">
+              <CardContent className="py-6">
                 <service.icon className="mx-auto h-12 w-12 text-primary mb-4" />
                 <h3 className="font-semibold">{service.name}</h3>
               </CardContent>

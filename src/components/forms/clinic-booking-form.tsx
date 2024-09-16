@@ -48,7 +48,7 @@ export function ClinicBookingFormComponent() {
   }
 
   return (
-    <div className="grid mx-auto items-center justify-center h-full my-3">
+    <div className="grid mx-auto items-center justify-center h-full my-12">
       {/* Navigation */}
 
       {/* Main Content */}

@@ -10,13 +10,12 @@ export function ClinicHeroComponent() {
       {/* Background Image */}
       <Image
         src="/heror-image.png"
-        width={100}
-        height={100}
+        width={150}
+        height={150}
         alt="Welcoming clinic environment"
-        layout="fill"
         objectFit="cover"
         quality={100}
-        className="absolute z-0 w-full h-[100svh]"
+        className="absolute z-0 w-full h-full object-cover"
       />
       
       {/* Overlay */}

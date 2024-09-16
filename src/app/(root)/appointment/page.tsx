@@ -5,7 +5,7 @@ import React from 'react'
 export default function AppointmentPage() {
   return (
     <MaxWidthWrapper>
-    <ClinicBookingFormComponent/>
+      <ClinicBookingFormComponent/>
    </MaxWidthWrapper>
   )
 }
