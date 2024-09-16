@@ -56,7 +56,7 @@ export function AboutSectionComponent() {
             ))}
            
           </div>
-          <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
+          <Button asChild size="lg" className="bg-primary items-center my-3 justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
         </div>
@@ -81,7 +81,7 @@ export function AboutSectionComponent() {
             ))}
             
           </div>
-          <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
+          <Button asChild size="lg" className="bg-primary items-center justify-center my-3 mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
         </div>
@@ -91,7 +91,7 @@ export function AboutSectionComponent() {
 
         {/* Testimonials Carousel */}
         <div>
-          <h2 className="text-3xl font-bold mb-8 text-center">What Our Patients Say</h2>
+          <h2 className="text-3xl font-bold my-8 text-center">What Our Patients Say</h2>
           <Carousel className="w-full max-w-xl mx-auto">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
