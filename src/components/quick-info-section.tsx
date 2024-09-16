@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import Link from "next/link"
 import { Button } from "./ui/button"
+import MaxWidthWrapper from "./layout/max-width-wrapper"
 
 export function QuickInfoSectionComponent() {
   const services = [
@@ -19,7 +20,7 @@ export function QuickInfoSectionComponent() {
   ]
 
   return (
-    <section className="py-12 bg-muted">
+    <MaxWidthWrapper>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
@@ -31,7 +32,7 @@ export function QuickInfoSectionComponent() {
               </CardContent>
             </Card>
           ))}
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+          <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
         </div>
@@ -66,6 +67,6 @@ export function QuickInfoSectionComponent() {
           </div>
         </div> */}
       </div>
-    </section>
+    </MaxWidthWrapper>
   )
 }

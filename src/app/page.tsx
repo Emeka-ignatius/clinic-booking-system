@@ -1,12 +1,12 @@
 import { AboutSectionComponent } from "@/components/about-section";
 import { ClinicHeroComponent } from "@/components/clinic-hero";
-import MaxWidthWrapper from "@/components/layout/max-width-wrapper";
 
 export default function Home() {
-  return (
-   <MaxWidthWrapper>
+  return (  
+    <>
+   
     <ClinicHeroComponent/>
     <AboutSectionComponent/>
-   </MaxWidthWrapper>
+    </>
   );
 }

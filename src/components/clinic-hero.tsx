@@ -3,9 +3,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import MaxWidthWrapper from "./layout/max-width-wrapper"
 
 export function ClinicHeroComponent() {
   return (
+    <MaxWidthWrapper>
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
@@ -38,5 +40,6 @@ export function ClinicHeroComponent() {
         </div>
       </div>
     </div>
+    </MaxWidthWrapper>
   )
 }

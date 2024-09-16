@@ -12,12 +12,13 @@ import {
 import { QuickInfoSectionComponent } from "./quick-info-section"
 import { Button } from "./ui/button"
 import Link from "next/link"
+import MaxWidthWrapper from "./layout/max-width-wrapper"
 
 export function AboutSectionComponent() {
   const doctors = [
-    { name: "Dr. Jane Smith", specialty: "General Practitioner", image: "/docs.png?height=300&width=300" },
-    { name: "Dr. John Doe", specialty: "Pediatrician", image: "/docs.png?height=300&width=300" },
-    { name: "Dr. Emily Brown", specialty: "Cardiologist", image: "/docs.png?height=300&width=300" },
+    { name: "Dr. Jane Smith", specialty: "General Practitioner", image: "/docs.png?height=200&width=200" },
+    { name: "Dr. John Doe", specialty: "Pediatrician", image: "/docs.png?height=200&width=200" },
+    { name: "Dr. Emily Brown", specialty: "Cardiologist", image: "/docs.png?height=200&width=200" },
   ]
 
   const testimonials = [
@@ -33,8 +34,8 @@ export function AboutSectionComponent() {
  ]
 
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4">
+    <MaxWidthWrapper>
+      <div className="container py-12 mx-auto px-4">
         {/* Introduction */}
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-4">About Our Clinic</h2>
@@ -43,7 +44,7 @@ export function AboutSectionComponent() {
             Established in 2000, we've been serving our community with compassionate and comprehensive care for over two decades.`}
           </p>
         </div>
-        <div className="mb-16">
+        <div className="mb-16 grid">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <Card key={index}>
@@ -53,13 +54,13 @@ export function AboutSectionComponent() {
                 </CardContent>
               </Card>
             ))}
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
           </div>
         </div>
         {/* Doctors and Staff */}
-        <div className="mb-16">
+        <div className="mb-16 grid">
           <h2 className="text-3xl font-bold mb-8 text-center">Meet Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {doctors.map((doctor, index) => (
@@ -77,7 +78,7 @@ export function AboutSectionComponent() {
                 </CardContent>
               </Card>
             ))}
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
           </div>
@@ -107,6 +108,6 @@ export function AboutSectionComponent() {
           </Carousel>
         </div>
       </div>
-    </section>
+    </MaxWidthWrapper>
   )
 }
