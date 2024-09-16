@@ -16,7 +16,7 @@ export function ClinicHeroComponent() {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="absolute z-0 w-full h-full"
+        className="absolute z-0 w-full h-[100svh]"
       />
       
       {/* Overlay */}
@@ -34,7 +34,7 @@ export function ClinicHeroComponent() {
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="bg-white text-primary hover:bg-primary hover:text-white">
+          <Button asChild size="lg" variant="default" className="bg-white text-primary hover:bg-primary hover:text-white">
             <Link href="/">Learn More About Us</Link>
           </Button>
         </div>

@@ -56,7 +56,7 @@ export function AboutSectionComponent() {
             ))}
            
           </div>
-          <Button asChild size="lg" className="bg-primary items-center my-3 justify-center mx-auto hover:bg-primary/90">
+          <Button asChild size="lg" variant="default" className="bg-primary items-center my-3 justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
         </div>
@@ -81,7 +81,7 @@ export function AboutSectionComponent() {
             ))}
             
           </div>
-          <Button asChild size="lg" className="bg-primary items-center justify-center my-3 mx-auto hover:bg-primary/90">
+          <Button asChild size="lg" variant="default" className="bg-primary items-center justify-center my-3 mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
         </div>
