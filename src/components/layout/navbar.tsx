@@ -11,9 +11,10 @@ export default function Navbar() {
           <Link href="/" className="text-2xl font-bold">ClinicName</Link>
           <div className="hidden md:flex space-x-4">
             <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/services" className="hover:underline">Services</Link>
-            <Link href="/about" className="hover:underline">About</Link>
-            <Link href="/contact" className="hover:underline">Contact</Link>
+            <Link href="/" className="hover:underline">Services</Link>
+            <Link href="/" className="hover:underline">About</Link>
+            <Link href="/" className="hover:underline">Contact</Link>
+            <Link href="/admin" className="hover:underline">Admin</Link>
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -27,13 +28,16 @@ export default function Navbar() {
                 <Link href="/">Home</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/services">Services</Link>
+                <Link href="/">Services</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/about">About</Link>
+                <Link href="/">About</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/contact">Contact</Link>
+                <Link href="/">Contact</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/admin">Admin</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

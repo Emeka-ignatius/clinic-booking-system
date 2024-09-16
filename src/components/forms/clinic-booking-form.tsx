@@ -48,11 +48,11 @@ export function ClinicBookingFormComponent() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="grid mx-auto items-center justify-center h-full my-3">
       {/* Navigation */}
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto py-8">
+      <main className="flex-grow container mx-auto justify-center items-center">
         <Card className="w-full max-w-lg mx-auto">
           <CardHeader>
             <CardTitle>Book Your Appointment</CardTitle>
