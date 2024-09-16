@@ -39,8 +39,8 @@ export function AboutSectionComponent() {
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-4">About Our Clinic</h2>
           <p className="text-lg mb-6">
-            Welcome to Nebs Clinic & Healthcare Service, where your well-being is our top priority. 
-            Established in 2000, we've been serving our community with compassionate and comprehensive care for over two decades.
+            {`Welcome to Nebs Clinic & Healthcare Service, where your well-being is our top priority. 
+            Established in 2000, we've been serving our community with compassionate and comprehensive care for over two decades.`}
           </p>
         </div>
         <div className="mb-16">
@@ -95,8 +95,8 @@ export function AboutSectionComponent() {
                 <CarouselItem key={index}>
                   <Card>
                     <CardContent className="p-6 text-center">
-                      <p className="text-lg mb-4">"{testimonial.text}"</p>
-                      <p className="font-semibold">- {testimonial.name}</p>
+                      <p className="text-lg mb-4">{testimonial.text}</p>
+                      <p className="font-semibold"> {testimonial.name}</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
