@@ -8,9 +8,10 @@ export default function Navbar() {
   return (
     <nav className="bg-primary text-primary-foreground p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">ClinicName</Link>
-          <div className="hidden md:flex space-x-4">
+          <Link href="/" className="text-2xl font-bold">Nebs Clinic & Healthcare Service</Link>
+          <div className="hidden md:flex space-x-4 gap-2">
             <Link href="/" className="hover:underline">Home</Link>
+            <Link href="/appointment">Appointment</Link>
             <Link href="/" className="hover:underline">Services</Link>
             <Link href="/" className="hover:underline">About</Link>
             <Link href="/" className="hover:underline">Contact</Link>
@@ -26,6 +27,9 @@ export default function Navbar() {
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <Link href="/">Home</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/appointment">Appointment</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/">Services</Link>

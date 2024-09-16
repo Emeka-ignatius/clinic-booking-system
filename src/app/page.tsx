@@ -1,10 +1,12 @@
-import { ClinicBookingFormComponent } from "@/components/forms/clinic-booking-form";
+import { AboutSectionComponent } from "@/components/about-section";
+import { ClinicHeroComponent } from "@/components/clinic-hero";
 import MaxWidthWrapper from "@/components/layout/max-width-wrapper";
 
 export default function Home() {
   return (
    <MaxWidthWrapper>
-    <ClinicBookingFormComponent/>
+    <ClinicHeroComponent/>
+    <AboutSectionComponent/>
    </MaxWidthWrapper>
   );
 }

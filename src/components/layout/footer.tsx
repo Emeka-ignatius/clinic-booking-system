@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="container mx-auto py-8 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-lg font-semibold mb-4">ClinicName</h3>
+          <h3 className="text-lg font-semibold mb-4">Nebs Clinic & Healthcare Service</h3>
           <p>Providing quality healthcare services since 2000.</p>
         </div>
         <div>
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center">
-        <p>&copy; 2023 ClinicName. All rights reserved.</p>
+        <p>&copy; 2023 Nebs Clinic & Healthcare Service. All rights reserved.</p>
       </div>
     </div>
   </footer>
