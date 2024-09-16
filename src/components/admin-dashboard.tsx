@@ -1,21 +1,21 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Calendar } from "@/components/ui/calendar"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Bar } from 'react-chartjs-2'
-import { 
-  Chart as ChartJS, 
-  CategoryScale, 
-  LinearScale, 
-  BarElement, 
-  Title, 
-  Tooltip, 
-  Legend 
+import {
+  BarElement,
+  CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LinearScale,
+  Title,
+  Tooltip
 } from 'chart.js'
-import { CalendarIcon, UserIcon, ClockIcon } from 'lucide-react'
+import { CalendarIcon, UserIcon } from 'lucide-react'
+import { useState } from 'react'
+import { Bar } from 'react-chartjs-2'
 
 ChartJS.register(
   CategoryScale,
