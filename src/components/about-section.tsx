@@ -54,10 +54,11 @@ export function AboutSectionComponent() {
                 </CardContent>
               </Card>
             ))}
-            <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
+           
+          </div>
+          <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
-          </div>
         </div>
         {/* Doctors and Staff */}
         <div className="mb-16 grid">
@@ -78,10 +79,11 @@ export function AboutSectionComponent() {
                 </CardContent>
               </Card>
             ))}
-            <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
+            
+          </div>
+          <Button asChild size="lg" className="bg-primary items-center justify-center mx-auto hover:bg-primary/90">
             <Link href="/appointment">Book Appointment</Link>
           </Button>
-          </div>
         </div>
 
         {/* QuickInfo Section */}

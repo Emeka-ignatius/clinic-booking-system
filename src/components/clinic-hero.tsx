@@ -11,12 +11,14 @@ export function ClinicHeroComponent() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/heror-image.png?height=1080&width=1920"
+        src="/heror-image.png"
+        width={100}
+        height={100}
         alt="Welcoming clinic environment"
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="absolute z-0"
+        className="absolute z-0 w-full h-full"
       />
       
       {/* Overlay */}
