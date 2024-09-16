@@ -8,8 +8,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { useState } from 'react'
-import Navbar from "../layout/navbar"
-import Footer from "../layout/footer"
 
 // Simulated data
 const services = [
@@ -52,7 +50,6 @@ export function ClinicBookingFormComponent() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
-      <Navbar/>
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto py-8">
@@ -137,7 +134,6 @@ export function ClinicBookingFormComponent() {
       </main>
 
       {/* Footer */}
-      <Footer/>
     </div>
   )
 }
